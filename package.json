@@ -1,0 +1,38 @@
+{
+  "name": "ctrf-to-html",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "npx eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ctrf",
+    "report",
+    "test report",
+    "html report"
+  ],
+  "author": "Arpan Patelia",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.12.0",
+    "esbuild-copy-static-files": "^0.1.0",
+    "eslint": "^9.12.0",
+    "globals": "^15.11.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.8.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "handlebars": "^4.7.8"
+  }
+}

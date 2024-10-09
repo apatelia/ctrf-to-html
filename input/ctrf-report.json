@@ -1,0 +1,847 @@
+{
+  "results": {
+    "tool": {
+      "name": "playwright"
+    },
+    "summary": {
+      "tests": 23,
+      "passed": 22,
+      "failed": 0,
+      "pending": 0,
+      "skipped": 1,
+      "other": 0,
+      "start": 1724860931799,
+      "stop": 1724860939089,
+      "suites": 0
+    },
+    "tests": [
+      {
+        "name": "Test that the correct product is added to the cart",
+        "status": "passed",
+        "duration": 1007,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then price of the \"Sauce Labs Backpack\" in cart must match \"$29.99\"",
+            "status": "passed"
+          },
+          {
+            "name": "And quantity of the \"Sauce Labs Backpack\" in cart must match 1",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Test removal of a product from the cart",
+        "status": "passed",
+        "duration": 1088,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then the user removes \"Sauce Labs Backpack\" from the cart",
+            "status": "passed"
+          },
+          {
+            "name": "Then the item count badge must not be displayed on cart icon in header",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Test that clicking on 'Continue Shopping' button takes back to Products page",
+        "status": "passed",
+        "duration": 1138,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks on the `Continue Shopping` button",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Test that clicking on `Checkout` button starts checkout",
+        "status": "passed",
+        "duration": 1128,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks on the `Checkout` button",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Your Information page",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Test that the user is able to log out from the cart page",
+        "status": "passed",
+        "duration": 2015,
+        "start": 1724860932,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks Log out from hamburger menu",
+            "status": "passed"
+          },
+          {
+            "name": "Then the user must be logged out",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Test that the copyright text in footer is visible",
+        "status": "passed",
+        "duration": 1056,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then copyright text in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "And the copyright text contents should be correct",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart"
+      },
+      {
+        "name": "Twitter/X link in footer should work",
+        "status": "passed",
+        "duration": 3897,
+        "start": 1724860932,
+        "stop": 1724860936,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"Twitter/X\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"Twitter/X\" link from footer, it should open correct \"https://x.com/saucelabs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart > Test Social Media links in footer"
+      },
+      {
+        "name": "Facebook link in footer should work",
+        "status": "passed",
+        "duration": 2196,
+        "start": 1724860932,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"Facebook\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"Facebook\" link from footer, it should open correct \"https://www.facebook.com/saucelabs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart > Test Social Media links in footer"
+      },
+      {
+        "name": "LinkedIn link in footer should work",
+        "status": "passed",
+        "duration": 2666,
+        "start": 1724860932,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/cart.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "And is on the cart page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"LinkedIn\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"LinkedIn\" link from footer, it should open correct \"https://www.linkedin.com/company/sauce-labs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/cart.feature.spec.js > Cart > Test Social Media links in footer"
+      },
+      {
+        "name": "Test that a Locked out user is not able to login despite using valid login credentials",
+        "status": "passed",
+        "duration": 702,
+        "start": 1724860933,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"locked_out_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should see a locked out error message",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login"
+      },
+      {
+        "name": "User should be able to log in with valid login credentials => standard_user / secret_sauce",
+        "status": "passed",
+        "duration": 988,
+        "start": 1724860932,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with valid credentials"
+      },
+      {
+        "name": "User should be able to log in with valid login credentials => problem_user / secret_sauce",
+        "status": "passed",
+        "duration": 729,
+        "start": 1724860933,
+        "stop": 1724860933,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"problem_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with valid credentials"
+      },
+      {
+        "name": "User should be able to log in with valid login credentials => performance_glitch_user / secret_sauce",
+        "status": "passed",
+        "duration": 5690,
+        "start": 1724860933,
+        "stop": 1724860939,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"performance_glitch_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with valid credentials"
+      },
+      {
+        "name": "User should not be able to log in with invalid login credentials => invalid_username / secret_sauce",
+        "status": "passed",
+        "duration": 673,
+        "start": 1724860933,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"invalid_username\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should see invalid credentials error message",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with invalid credentials"
+      },
+      {
+        "name": "User should not be able to log in with invalid login credentials => standard_user / invalid_password",
+        "status": "passed",
+        "duration": 681,
+        "start": 1724860933,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"invalid_password\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should see invalid credentials error message",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with invalid credentials"
+      },
+      {
+        "name": "User should not be able to log in with invalid login credentials => invalid_username / invalid_password",
+        "status": "passed",
+        "duration": 677,
+        "start": 1724860933,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/login.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"invalid_username\" as username and \"invalid_password\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should see invalid credentials error message",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/login.feature.spec.js > User Login > Test login with invalid credentials"
+      },
+      {
+        "name": "Test that the user is able to add a product to the cart",
+        "status": "passed",
+        "duration": 746,
+        "start": 1724860934,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Backpack\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "Then the cart item badge must show correct count of 1",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products"
+      },
+      {
+        "name": "Test that the user is able to remove a product from the cart",
+        "status": "passed",
+        "duration": 766,
+        "start": 1724860934,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "When the user adds \"Sauce Labs Bike Light\" to the cart",
+            "status": "passed"
+          },
+          {
+            "name": "Then the user should be able to remove \"Sauce Labs Bike Light\" from the cart, using the `Remove` button",
+            "status": "passed"
+          },
+          {
+            "name": "Then the cart item badge must not be displayed",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products"
+      },
+      {
+        "name": "Test that the user is able to log out from the products page",
+        "status": "skipped",
+        "duration": 0,
+        "start": 1724860934,
+        "stop": 1724860934,
+        "rawStatus": "skipped",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [],
+        "suite": "chromium > feature/products.feature.spec.js > Products"
+      },
+      {
+        "name": "Test that the copyright text in footer is visible",
+        "status": "passed",
+        "duration": 676,
+        "start": 1724860934,
+        "stop": 1724860934,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "Then copyright text in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "And the copyright text contents should be correct",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products"
+      },
+      {
+        "name": "Twitter/X link in footer should work",
+        "status": "passed",
+        "duration": 3619,
+        "start": 1724860934,
+        "stop": 1724860937,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"Twitter/X\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"Twitter/X\" link from footer, it should open correct \"https://x.com/saucelabs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products > Test Social Media links in footer"
+      },
+      {
+        "name": "Facebook link in footer should work",
+        "status": "passed",
+        "duration": 1649,
+        "start": 1724860934,
+        "stop": 1724860935,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"Facebook\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"Facebook\" link from footer, it should open correct \"https://www.facebook.com/saucelabs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products > Test Social Media links in footer"
+      },
+      {
+        "name": "LinkedIn link in footer should work",
+        "status": "passed",
+        "duration": 2340,
+        "start": 1724860934,
+        "stop": 1724860936,
+        "rawStatus": "passed",
+        "tags": [],
+        "type": "e2e",
+        "filePath": "/home/arpan/GitRepos/playwright-with-bdd/.features-gen/feature/products.feature.spec.js",
+        "retries": 0,
+        "flaky": false,
+        "steps": [
+          {
+            "name": "Given the User is on login page",
+            "status": "passed"
+          },
+          {
+            "name": "When the User tries to login with \"standard_user\" as username and \"secret_sauce\" as password",
+            "status": "passed"
+          },
+          {
+            "name": "Then the User should be on Products page",
+            "status": "passed"
+          },
+          {
+            "name": "Then \"LinkedIn\" link in footer should be visible",
+            "status": "passed"
+          },
+          {
+            "name": "When the user clicks \"LinkedIn\" link from footer, it should open correct \"https://www.linkedin.com/company/sauce-labs\" in a new tab",
+            "status": "passed"
+          }
+        ],
+        "suite": "chromium > feature/products.feature.spec.js > Products > Test Social Media links in footer"
+      }
+    ]
+  }
+}
