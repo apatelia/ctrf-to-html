@@ -32,7 +32,6 @@
     "typescript-eslint": "^8.8.1"
   },
   "dependencies": {
-    "bootstrap": "^5.3.3",
     "handlebars": "^4.7.8"
   }
 }

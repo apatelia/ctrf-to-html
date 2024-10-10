@@ -4,14 +4,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CTRF Test Report</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>{{Title}}</title>
 </head>
 
 <body>
-  <div class="container">
-    <h1>CTRF Test Report</h1>
-    <div>Tool: {{Tool}}</div>
+  <div class="container text-center">
+    <h1>{{Title}}</h1>
+    <div class="row">
+      <div class="col w-50">
+        <div class="row text-start w-90">
+          <!-- <label for="filterTextInput" class="form-label">Filter:</label> -->
+          <input type="text" id="filterTextInput" class="form-control w-70" placeholder="Search for tags or filename">
+        </div>
+      </div>
+      <div id="summarySection" class="col text-start">{{{Summary}}}</div>
+    </div>
   </div>
 </body>
+<script src="js/bootstrap.min.js"></script>
 
 </html>

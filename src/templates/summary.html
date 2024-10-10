@@ -1,0 +1,22 @@
+<div class="vstack gap-3">
+  <div class="btn-group" role="group" aria-label="Tests Summary">
+    <button type="button" class="btn btn-primary">Tests: <span class="badge text-bg-light">{{TotalTests}}</span>
+    </button>
+    <button type="button" class="btn btn-success">Passed: <span
+        class="badge text-bg-light">{{PassedTests}}</span></button>
+    <button type="button" class="btn btn-danger">Failed: <span
+        class="badge text-bg-light">{{FailedTests}}</span></button>
+    <button type="button" class="btn btn-warning">Skipped: <span
+        class="badge text-bg-light">{{SkippedTests}}</span></button>
+  </div>
+  <div class="row">
+    <ul class="list-group clearfix">
+      <li class="list-group-item"><strong>Start Time:</strong> {{StartTime}}</li>
+      <li class="list-group-item"><strong>End Time:</strong> &nbsp;&nbsp;{{EndTime}}</li>
+      <li class="list-group-item">
+        <strong>Tool: </strong><span class="badge rounded-pill text-bg-secondary">
+          {{Tool}}</span>
+      </li>
+    </ul>
+  </div>
+</div>
